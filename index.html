@@ -1,0 +1,77 @@
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale1.0">
+    <title>Basics</title>
+</head>
+<body>
+
+    <header>Positioning: No specific positioning property has been set, so it follows the normal document flow.
+        Displacement: No displacement has been applied to the header.</header>
+    <nav>Positioning: The position: fixed; property is used to take the element out of the normal document flow and position it relative to the browser window.
+        Displacement: The top: 170px; and left: 35px; properties are used to specify the exact position of the nav element from the top and left edges of the window.</nav>
+    <div>
+        <div class="articles">
+            <article>Positioning: The .articles class has position: relative; specified. This allows the articles to be positioned relative to their normal position in the document flow.
+                Displacement: The left: 30px; and top: 45px; properties are used to move the articles 30 pixels to the right and 45 pixels down from their normal position.</article>
+            <article>Positioning: The position: relative; property is used to position the article relative to its normal position within the .articles div.
+                Displacement: The top: 15px; property is used to move the article 15 pixels down from its normal position.</article>
+        </div>
+    <aside>Positioning: The position: absolute; property is used to take the element out of the normal document flow and position it relative to its nearest positioned ancestor (in this case, the div element).
+        Displacement: The left: 50%;, right: 10%;, and top: 235px; properties are used to specify the exact position of the aside element. It is positioned 50% from the left edge of the div, 10% from the right edge, and 235 pixels from the top edge.</aside>
+    <footer>Positioning: The position: fixed; property is used to position the element relative to the browser window.
+        Displacement: The bottom: 0px; property is used to position the footer at the bottom of the window.</footer>
+    </div>
+
+</body>
+
+<style>
+        header {
+            width: 90%;
+            height: 100px;
+            background-color: #F23847;
+            border: 3px solid green;
+            padding: 10px;
+            margin: 25px;
+        }
+        nav {
+            position: fixed;
+            width: 90%;
+            height: 50px;
+            background-color: #5EF2F2;
+            position: fixed;
+            top: 170px;
+            left: 35px;
+        }
+        article {
+            width: 65%;
+            height: 200px;
+            background-color: #63F2E4;
+            border: 5px solid grey;
+            position: relative;
+            top: 15px;
+        }
+        aside {
+            width: 40%;
+            height: 420px;
+            background-color: #F2D95C;
+            position: absolute;
+            left: 50%;
+            right: 10%;
+            top: 235px;
+        }
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: #F20505;
+            position: fixed;
+            bottom: 0px;
+        }
+        .articles {
+            position: relative;
+            left: 30px;
+            top: 45px;
+            width: 65%;
+            height: 70%;
+        }
+    </style>
